@@ -12,34 +12,21 @@ main{
     "stopka             stopka";
     letter-spacing: 2px;
 }
+
+
+/* ================navigation================= */
 navigation{
     height:150px;
     color:white;
     display:flex;
     grid-area:navigation;
 }
-
 #navigation_buttons{
     display:flex;
     justify-content: space-around;
     align-items: center;
     width:100%;
     flex-wrap: wrap;
-}
-
-#logo{
-    height:140px;
-    padding:5px;
-}
-
-#photoslider{
-    background-image: url(slide1.jpg);
-    height:900px;
-    display:block;
-    background-repeat: no-repeat;
-    background-size:1900px;
-    background-position-x: center;
-    grid-area:photoslider;
 }
 #navigation_buttons button{
     background:none;
@@ -48,12 +35,30 @@ navigation{
     height:50px;
     font-size:30px;
     border:none;
+    padding-top:5px;
     border-bottom:2px solid white;
     text-transform: uppercase;
 }
 #navigation_buttons button:hover{
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
 }
+#logo{
+    height:140px;
+    padding:5px;
+}
+
+/* ================photoslider================= */
+#photoslider{
+    background-image: url(slide1.jpg);
+    height:1000px;
+    display:block;
+    background-repeat: no-repeat;
+    background-size:1900px;
+    background-position-x: center;
+    grid-area:photoslider;
+}
+
+/* ================about us==================== */
 #about_us_photo img{
     width:80%;
     border-radius: 50px;
@@ -75,8 +80,11 @@ h1{
     text-align: justify;
     grid-area:about_us_info;
 }
+
+/* ====================serwis cennik=================== */
 #serwis{
     grid-area: serwis;
+    height:1100px;
     background-image: url(pexels-cottonbro-4488660.jpg);
     background-size:1900px;
     background-repeat: no-repeat;
@@ -85,14 +93,16 @@ h1{
 }
 #serwis table{
     background-color:rgba(0, 0, 0, 0.77);
-    margin:30px 50px;
+    margin:90px 50px;
     float:right;
     padding:30px;
+    
 }
 #serwis table td{
     padding:5px 20px;
 }
 
+/* =================serwis rezerwacje================== */
 #serwis_reservation{
     background: none;
     color:white;
@@ -120,11 +130,10 @@ h1{
     border:none;
     font-size:20px;
     padding:10px 20px;
-    /* border-radius: 10px; */
     font-family: Tahoma, Arial, sans-serif; 
     min-width:160px;
 }
-#flexbuttons{
+.center{
     text-align: center;
 }
 .form_buttons{
@@ -151,8 +160,7 @@ form table td{
     display:flex;
     overflow-x:scroll;
     overflow-y: hidden;
-    height:1000px;
-    
+    height:1000px;   
 }
 .category{
     margin: 0 20px;
@@ -172,14 +180,12 @@ form table td{
 }
 .visible{
     background-color: hotpink;
-    margin:60px 0 0 0;
+    margin:60px 10px 0 10px;
     /* display:grid; */
     min-width: 350px;
     padding:0 20px 20px 20px;
     /* padding:20px; */
     position: relative;
-}
-#kjeden_wjeden{
     display:none;
 }
 .close{
@@ -210,6 +216,8 @@ form table td{
     transform: rotate(-45deg);
 }
 
+
+/* ===================stopka=================== */
 #stopka{
     color:lightgray;
     text-align: center;
