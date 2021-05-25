@@ -1,0 +1,225 @@
+main{
+    background-image: url(y-so-serious.png);
+    font-family: Tahoma, Arial, sans-serif; 
+    display: grid;
+    grid-template-areas: 
+    "navigation         navigation"
+    "photoslider        photoslider"
+    "about_us_photo     about_us_info"
+    "serwis             serwis"
+    "serwis_reservation serwis_reservation"
+    "shop               shop"
+    "stopka             stopka";
+    letter-spacing: 2px;
+}
+navigation{
+    height:150px;
+    color:white;
+    display:flex;
+    grid-area:navigation;
+}
+
+#navigation_buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+#logo{
+    height:140px;
+    padding:5px;
+}
+
+#photoslider{
+    background-image: url(slide1.jpg);
+    height:900px;
+    display:block;
+    background-repeat: no-repeat;
+    background-size:1900px;
+    background-position-x: center;
+    grid-area:photoslider;
+}
+#navigation_buttons button{
+    background:none;
+    color:white;
+    width:170px;
+    height:50px;
+    font-size:30px;
+    border:none;
+    border-bottom:2px solid white;
+    text-transform: uppercase;
+}
+#navigation_buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#about_us_photo img{
+    width:80%;
+    border-radius: 50px;
+    border:2px solid white;
+    margin:30px 40px;
+}
+#about_us_photo{
+    grid-area:about_us_photo;
+}
+h1{
+    text-align:center;
+    padding-bottom: 10px;
+    width:100%;
+    border-bottom:2px solid white;
+}
+#about_us_info{
+    color:white;
+    margin:30px 40px;
+    text-align: justify;
+    grid-area:about_us_info;
+}
+#serwis{
+    grid-area: serwis;
+    background-image: url(pexels-cottonbro-4488660.jpg);
+    background-size:1900px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    color:white;
+}
+#serwis table{
+    background-color:rgba(0, 0, 0, 0.77);
+    margin:30px 50px;
+    float:right;
+    padding:30px;
+}
+#serwis table td{
+    padding:5px 20px;
+}
+
+#serwis_reservation{
+    background: none;
+    color:white;
+    grid-area:serwis_reservation;
+    padding:20px 50px;
+    font-size:20px;
+    margin:0 auto;
+}
+#serwis_reservation div{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#serwis_reservation form{
+    background-color:rgba(255, 255, 255, 0.7);
+    color:black;
+    padding:5px 20px;
+}
+#serwis_reservation img{
+    width:500px;
+}
+.style_input{
+    background:none;
+    color:black;
+    border:none;
+    font-size:20px;
+    padding:10px 20px;
+    /* border-radius: 10px; */
+    font-family: Tahoma, Arial, sans-serif; 
+    min-width:160px;
+}
+#flexbuttons{
+    text-align: center;
+}
+.form_buttons{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin:0 20px;
+}
+.style_input:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form table td{
+    border-bottom:1px solid black;
+    padding:5px 20px;
+}
+
+
+
+
+/* =======================Sklep========================== */
+#shop{
+    background-color:white;
+    grid-area:shop;
+    margin:20px;
+    padding:0 20px;
+    display:flex;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    height:1000px;
+    
+}
+.category{
+    margin: 0 20px;
+}
+.przewijak{
+    height:950px;
+}
+.przewijak:hover{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.items{
+    background-color:grey;
+    width:250px;
+    height:250px;
+    margin:10px 0;
+}
+.visible{
+    background-color: hotpink;
+    margin:60px 0 0 0;
+    /* display:grid; */
+    min-width: 350px;
+    padding:0 20px 20px 20px;
+    /* padding:20px; */
+    position: relative;
+}
+#kjeden_wjeden{
+    display:none;
+}
+.close{
+    right:15px;
+    /* top:10px; */
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    background: none;
+    border:none;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+#stopka{
+    color:lightgray;
+    text-align: center;
+    grid-area: stopka;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+
