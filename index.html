@@ -11,10 +11,11 @@
         <navigation>
             <img src="logo.jpg" alt="logo" id="logo">
                 <div id="navigation_buttons">
-                    <button>About us</button>
-                    <button>Serwis</button>
-                    <button>Sklep</button>
-                    <button>Kontakt</button>
+                    <a href="#about_us_photo"><button>About us</button></a>
+                    <a href="#serwis"><button>Cennik</button></a>
+                    <a href="#serwis_reservation"><button>Serwis</button></a>
+                    <a href="#shop"><button>Sklep</button></a>
+                    <a href="#about_us_photo"><button>Kontakt</button></a>
                 </div>
         </navigation>
         
@@ -225,225 +226,559 @@
             <div class="category">
                 <p><h3>Kaski</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="kjeden_wjeden.style.display='grid'" ondblclick="kjeden_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="kjeden_wdwa.style.display='grid'"  ondblclick="kjeden_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="kjeden_wtrzy.style.display='grid'"  ondblclick="kjeden_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="kjeden_wcztery.style.display='grid'"  ondblclick="kjeden_wcztery.style.display='none'"></div> 
+                    <div class="items" onclick="kjeden_wjeden.style.display='grid'" ondblclick="kjeden_wjeden.style.display='none'">
+                        <img src="Kaski\kask1.png" alt="Kask1">
+                    </div>
+                    <div class="items" onclick="kjeden_wdwa.style.display='grid'"  ondblclick="kjeden_wdwa.style.display='none'">
+                        <img src="Kaski\kask2.png" alt="Kask2">
+                    </div>
+                    <div class="items" onclick="kjeden_wtrzy.style.display='grid'"  ondblclick="kjeden_wtrzy.style.display='none'">
+                        <img src="Kaski\kask3.png" alt="Kask3">
+                    </div>
+                    <div class="items" onclick="kjeden_wcztery.style.display='grid'"  ondblclick="kjeden_wcztery.style.display='none'">
+                        <img src="Kaski\kask4.png" alt="Kask4">
+                    </div>
+                     
                 </div>
             </div>
             <!-- Kaski informacja -->
                 <div class="visible" id="kjeden_wjeden">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>ABUS GameChanger Kask,<br> czarny (2021)</h3>
                     <button class="close" onclick="kjeden_wjeden.style.display='none'"></button>
+                    <img src="Kaski\kask1.png" alt="Kask1" class="center">
+                    <p>ABUS GameChanger to doskonały kask lotniczy do profesjonalnych wyścigów rowerowych i najwyższych wymagań. Definiuje on na nowo aerodynamikę. Wyjątkowe formy przepływu zostały opracowane w ścisłej współpracy z zawodnikami ekipy Movistar, w celu przeciwstawienia się naturalnemu wrogowi zawodnika - wiatrowi głowy.</p>
+                    <select name="size" class="size center">
+                        <option value="51-55cm">51-55cm</option>
+                        <option value="52-58cm">52-58cm</option>
+                        <option value="58-61cm">58-61cm</option>
+                    </select>
+                    <h4 class="cena">860zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>    
                 </div>
                 <div class="visible" id="kjeden_wdwa">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>HJC Valeco Road Kask,<br> biały (2021)</h3>
                     <button class="close" onclick="kjeden_wdwa.style.display='none'"></button>
+                    <img src="Kaski\kask2.png" alt="Kask2" class="center">
+                    <p>Nowy kask VALECO firmy HJC jest oparty na sprawdzonym już kasku IBEX i charakteryzuje się pierwszorzędną aerodynamiczną konstrukcją oraz optymalną wentylacją. Konstrukcja In-Mold nadaje kaskowi, choć lekki jak piórko, solidną konstrukcję, a tym samym większe bezpieczeństwo i sztywność.</p>
+                    <select name="size" class="size center">
+                        <option value="51-55cm">51-55cm</option>
+                        <option value="52-58cm">52-58cm</option>
+                        <option value="58-61cm">58-61cm</option>
+                    </select>
+                    <h4 class="cena">670,99zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>   
                 </div>
                 <div class="visible" id="kjeden_wtrzy">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>IXS Trigger AM Kask,<br> niebieski (2021)</h3>
                     <button class="close" onclick="kjeden_wtrzy.style.display='none'"></button>
+                    <img src="Kaski\kask3.png" alt="Kask3" class="center">
+                    <p>Trigger AM to nowy kask All Mountain and Trail firmy iXS. Jest on oparty na sprawdzonych technologiach znanego kasku Trail RS Evo i został wyposażony w dodatkowe nowoczesne funkcje. Podwójny proces InMould przekonuje poprzez optymalizację wagi, wentylacji i stabilności. </p>
+                    <select name="size" class="size center">
+                        <option value="51-55cm">51-55cm</option>
+                        <option value="52-58cm">52-58cm</option>
+                        <option value="58-61cm">58-61cm</option>
+                    </select>
+                    <h4 class="cena">580,99zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button> 
+                    
                 </div>
                 <div class="visible" id="kjeden_wcztery">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>Endura MT500 Koroyd Kask,<br> niebieski/czarny (2021)</h3>
                     <button class="close" onclick="kjeden_wcztery.style.display='none'"></button>
+                    <img src="Kaski\kask4.png" alt="Kask4" class="center">
+                    <p>Kask MT500 definiuje standard dla nowoczesnego kasku rowerowego, pod względem wyglądu, bezpieczeństwa i osiągów. W głównej konstrukcji hełmu MT500 rury Koroyda pochłaniają więcej energii niż konwencjonalne pianki, które zmniejszają maksymalne ciśnienie w przypadku uderzenia.</p>
+                    <select name="size" class="size center">
+                        <option value="51-55cm">51-55cm</option>
+                        <option value="52-58cm">52-58cm</option>
+                        <option value="58-61cm">58-61cm</option>
+                    </select>
+                    <h4 class="cena">719,99zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
                 </div>
             
             <!-- Obuwie  -->
-                <div class="category">
+            <div class="category">
                     <p><h3>Obuwie</h3></p>
                     <div class="przewijak">
-                        <div class="items" onclick="kdwa_wjeden.style.display='grid'"  ondblclick="kdwa_wjeden.style.display='none'"></div>
-                        <div class="items" onclick="kdwa_wdwa.style.display='grid'"  ondblclick="kdwa_wdwa.style.display='none'"></div>
-                        <div class="items" onclick="kdwa_wtrzy.style.display='grid'"  ondblclick="kdwa_wtrzy.style.display='none'"></div>
-                        <div class="items" onclick="kdwa_wcztery.style.display='grid'"  ondblclick="kdwa_wcztery.style.display='none'"></div>
+                        <div class="items" onclick="kdwa_wjeden.style.display='grid'"  ondblclick="kdwa_wjeden.style.display='none'">
+                            <img src="Obuwie\Obuwie1.png" alt="Obuwie1">
+                        </div>
+                        <div class="items" onclick="kdwa_wdwa.style.display='grid'"  ondblclick="kdwa_wdwa.style.display='none'">
+                            <img src="Obuwie\Obuwie2.png" alt="Obuwie2">
+                        </div>
+                        <div class="items" onclick="kdwa_wtrzy.style.display='grid'"  ondblclick="kdwa_wtrzy.style.display='none'">
+                            <img src="Obuwie\Obuwie3.png" alt="Obuwie3">
+                        </div>
+                        <div class="items" onclick="kdwa_wcztery.style.display='grid'"  ondblclick="kdwa_wcztery.style.display='none'">
+                            <img src="Obuwie\Obuwie4.png" alt="Obuwie4">
+                        </div>
                     </div>
-                </div>
+            </div>
             <!-- Obuwie informacja -->
                 <div class="visible" id="kdwa_wjeden">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>Fizik Transiro Infinito R3,<br> czarny/biały (2021)</h3>
                     <button class="close" onclick="kdwa_wjeden.style.display='none'"></button>
+                    <img src="Obuwie\Obuwie1.png" alt="Obuwie1" class="center">
+                    <p>Transiro Infinito R3 to but triathlonowy, który łączy w sobie sztywną podeszwę zewnętrzną z szybkim wejściem dla stóp i precyzyjną regulacją dopasowania - nawet w gorączkowych sytuacjach wyścigowych.</p>
+                    <select name="size" class="size center">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                    <h4 class="cena">1129zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
+                    
                 </div>
                 <div class="visible" id="kdwa_wdwa">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>Shimano SH-XC9 S-Phyre Bike Shoes,<br> czarny (2021)</h3>
                     <button class="close" onclick="kdwa_wdwa.style.display='none'"></button>
+                    <img src="Obuwie\Obuwie2.png" alt="Obuwie2" class="center">
+                    <p>Dzięki S-PHYRE, Shimano wprowadził na rynek najbardziej innowacyjne produkty techniczne, jakie można sobie wyobrazić. SH-XC901 jest bezkompromisowym butem wyścigowym przeznaczonym do biegów przełajowych i rowerowych. Jednoczęściowa cholewka, ciasna podstawa, zaokrąglona pięta i wąskie pudełko na palce zapewniają dobre dopasowanie.</p>
+                    <select name="size" class="size center">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                    <h4 class="cena">1619zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
+                    
                 </div>
                 <div class="visible" id="kdwa_wtrzy">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>Giro Cylinder II Shoes Women,<br> czarny (2021)</h3>
                     <button class="close" onclick="kdwa_wtrzy.style.display='none'"></button>
+                    <img src="Obuwie\Obuwie3.png" alt="Obuwie3" class="center">
+                    <p>Z Cylinder II W otrzymujesz but do roweru górskiego, który oferuje wysoki komfort noszenia oraz zalety i precyzję systemu regulacji BOA. Dzięki jednej regulacji i przedniemu paskowi błyskawicznie będziesz na nogach i gotowy do drogi.</p>
+                    <select name="size" class="size center">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                    </select>
+                    <h4 class="cena">585zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
                 </div>
                 <div class="visible" id="kdwa_wcztery">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                    <button>Do koszyku</button>
-                    <button>Kup odrazu</button>
+                    <h3>Giro Empire SLX,<br> czarny (2021)</h3>
                     <button class="close" onclick="kdwa_wcztery.style.display='none'"></button>
+                    <img src="Obuwie\Obuwie4.png" alt="Obuwie4" class="center">
+                    <p>Z nowym Empire SLX, nic nie może cię powstrzymać. Przy masie zaledwie 370 g, w połączeniu z doskonałym dopasowaniem i niezrównanym komfortem, można latać na stokach. </p>
+                    <select name="size" class="size center">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                    <h4 class="cena">1620zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
+                    
                 </div>
 
             <!-- Ubrania  -->
             <div class="category">
-                <p><h3>Ubrania</h3></p>
+                <p><h3>Odzież</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="ktrzy_wjeden.style.display='grid'"  ondblclick="ktrzy_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="ktrzy_wdwa.style.display='grid'"  ondblclick="ktrzy_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="ktrzy_wtrzy.style.display='grid'"  ondblclick="ktrzy_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="ktrzy_wcztery.style.display='grid'"  ondblclick="ktrzy_wcztery.style.display='none'"></div>
-                    <div class="items" onclick="ktrzy_wpiec.style.display='grid'"  ondblclick="ktrzy_wpiec.style.display='none'"></div>
+                    <div class="items" onclick="ktrzy_wjeden.style.display='grid'"  ondblclick="ktrzy_wjeden.style.display='none'">
+                        <img src="Ubrania\Ubranie1.png" alt="Koszula1">
+                    </div>
+                    <div class="items" onclick="ktrzy_wdwa.style.display='grid'"  ondblclick="ktrzy_wdwa.style.display='none'">
+                        <img src="Ubrania\Ubranie2.png" alt="Koszula2">
+                    </div>
+                    <div class="items" onclick="ktrzy_wtrzy.style.display='grid'"  ondblclick="ktrzy_wtrzy.style.display='none'">
+                        <img src="Ubrania\Ubranie3.png" alt="Spodnie1">
+                    </div>
+                    <div class="items" onclick="ktrzy_wcztery.style.display='grid'"  ondblclick="ktrzy_wcztery.style.display='none'">
+                        <img src="Ubrania\Ubranie4.png" alt="Spodnie2">
+                    </div>
+                    <div class="items" onclick="ktrzy_wpiec.style.display='grid'"  ondblclick="ktrzy_wpiec.style.display='none'">
+                        <img src="Ubrania\Ubranie5.png" alt="Kurtka1">
+                    </div>
                 </div>
             </div>
             <!-- Ubrania informacja -->
             <div class="visible" id="ktrzy_wjeden">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Bontrager Velocis Cycling,<br> niebieski (2021)</h3>
                 <button class="close" onclick="ktrzy_wjeden.style.display='none'"></button>
+                <img src="Ubrania\Ubranie1.png" alt="Koszula1" class="center">
+                <p>Z tą koszulką rowerową jesteś dobrze przygotowany do wspaniałego dnia na drodze. Krótki rękaw Velocis Cycling Jersey z oddychającymi materiałami i wygodnym krojem zapewnia najwyższy komfort i optymalną swobodę ruchów. Trzy otwarte tylne kieszenie oferują wystarczająco dużo miejsca na zapasową rurkę i rogalik jako prowiant awaryjny.</p>
+                <select name="size" class="size center">
+                    <option value="39">S</option>
+                    <option value="40">M</option>
+                    <option value="41">L</option>
+                    <option value="42">XL</option>
+                </select>
+                <h4 class="cena">438,99zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ktrzy_wdwa">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
-                <button class="close" onclick="ktrzy_wdwa.style.display='none'"></button>
+                <h3>Craft Essence Koszulka Damska,<br> niebieski (2021)</h3>
+                <button class="close" onclick="ktrzy_wdwa.style.display='none'"></button>    
+                    <img src="Ubrania\Ubranie2.png" alt="Koszula2" class="center">
+                    <p>Niezależnie od tego, czy zdecydujesz się na jazdę na rowerze szosowym czy górskim, ważne jest, abyś wybrał odpowiednie ubranie. Koszulka Essence firmy CRAFT obiecuje Ci najlepszy komfort noszenia na obu rowerach.</p>
+                    <select name="size" class="size center">
+                        <option value="39">S</option>
+                        <option value="40">M</option>
+                        <option value="41">L</option>
+                        <option value="42">XL</option>
+                    </select>
+                    <h4 class="cena">269,99zł</h4>
+                    <button class="dokoszyku center">Do koszyku</button>
+                    <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ktrzy_wtrzy">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>GORE WEAR C5 Optiline,<br> czarny/czerwony (2021)</h3>
                 <button class="close" onclick="ktrzy_wtrzy.style.display='none'"></button>
+                <img src="Ubrania\Ubranie3.png" alt="Spodnie1" class="center">
+                <p>Nawet w najcieplejsze dni i kiedy świeci słońce, wiatr może być świeży po zdobyciu ostatniego szczytu. Oddychający materiał odprowadza wilgoć, aby nie zamarznąć. Dodatkową ochronę zapewnia poduszka siedzenia GORE WINDSTOPPER.</p>
+                <select name="size" class="size center">
+                    <option value="39">S</option>
+                    <option value="40">M</option>
+                    <option value="41">L</option>
+                    <option value="42">XL</option>
+                </select>
+                <h4 class="cena">449,99zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ktrzy_wcztery">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Endura Padded 200 Series,<br> czarny (2021)</h3>
                 <button class="close" onclick="ktrzy_wcztery.style.display='none'"></button>
+                <img src="Ubrania\Ubranie4.png" alt="Spodnie2" class="center">
+                <p>Formowana wkładka rowerowa wykonana z szybko wysychającego materiału, który sprawnie usuwa wilgoć i utrzymuje skórę suchą. Wkładka o grubości 9 mm, jest antybakteryjna, szybkoschnąca i posiada wytłoczoną strukturę, która poprawia komfort w głównych punktach styku. Idealna na krótkie lub średnio długie dystanse trwające 1 do 4 godzin. </p>
+                <select name="size" class="size center">
+                    <option value="39">S</option>
+                    <option value="40">M</option>
+                    <option value="41">L</option>
+                    <option value="42">XL</option>
+                </select>
+                <h4 class="cena">134,99zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ktrzy_wpiec">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Shimano Compact,<br> czarny (2021)</h3>
                 <button class="close" onclick="ktrzy_wpiec.style.display='none'"></button>
+                <img src="Ubrania\Ubranie5.png" alt="Kurtka1" class="center">
+                <p>Najmniejsza i najlżejsza warstwa ochronna. Przy łagodniejszej/suchej pogodzie to wszystko, co jest potrzebne do ogrzania górnej części ciała. Tkanina jest wiatroszczelna i wodoodporna oraz posiada bardzo widoczną 360-stopniową odblaskowość 3M. </p>
+                <select name="size" class="size center">
+                    <option value="39">S</option>
+                    <option value="40">M</option>
+                    <option value="41">L</option>
+                    <option value="42">XL</option>
+                </select>
+                <h4 class="cena">314,99zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
 
             <!-- Rowery -->
             <div class="category">
                 <p><h3>Rowery</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="kcztery_wjeden.style.display='grid'"  ondblclick="kcztery_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wdwa.style.display='grid'"  ondblclick="kcztery_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wtrzy.style.display='grid'"  ondblclick="kcztery_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wcztery.style.display='grid'"  ondblclick="kcztery_wcztery.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wpiec.style.display='grid'"  ondblclick="kcztery_wpiec.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wszesc.style.display='grid'"  ondblclick="kcztery_wszesc.style.display='none'"></div>
-                    <div class="items" onclick="kcztery_wsiedem.style.display='grid'"  ondblclick="kcztery_wsiedem.style.display='none'"></div>
+                    <div class="items" onclick="kcztery_wjeden.style.display='grid'"  ondblclick="kcztery_wjeden.style.display='none'">
+                        <img src="Rowery\rower1.png" alt="rower1">
+                    </div>
+                    <div class="items" onclick="kcztery_wdwa.style.display='grid'"  ondblclick="kcztery_wdwa.style.display='none'">
+                        <img src="Rowery\rower2.png" alt="rower2">
+                    </div>
+                    <div class="items" onclick="kcztery_wtrzy.style.display='grid'"  ondblclick="kcztery_wtrzy.style.display='none'">
+                        <img src="Rowery\rower3.png" alt="rower3">
+                    </div>
+                    <div class="items" onclick="kcztery_wcztery.style.display='grid'"  ondblclick="kcztery_wcztery.style.display='none'">
+                        <img src="Rowery\rower4.png" alt="rower4">
+                    </div>
+                    <div class="items" onclick="kcztery_wpiec.style.display='grid'"  ondblclick="kcztery_wpiec.style.display='none'">
+                        <img src="Rowery\rower5.png" alt="rower5">
+                    </div>
+                    <div class="items" onclick="kcztery_wszesc.style.display='grid'"  ondblclick="kcztery_wszesc.style.display='none'">
+                        <img src="Rowery\rower6.png" alt="rower6">
+                    </div>
+                    <div class="items" onclick="kcztery_wsiedem.style.display='grid'"  ondblclick="kcztery_wsiedem.style.display='none'">
+                        <img src="Rowery\rower7.png" alt="rower7">
+                    </div>
                 </div>
             </div>
             <!-- Rowery informacja -->
             <div class="visible" id="kcztery_wjeden">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>VOTEC VRC Evo, czarny (2021)</h3>
                 <button class="close" onclick="kcztery_wjeden.style.display='none'"></button>
+                <img src="Rowery\rower1.png" alt="rower1" class="center">
+                <p>Złam zasady. Zdefiniuj na nowo swoje rozumienie idealnej rundy po pracy. Nie ma znaczenia, kiedy i gdzie wsiądziesz na Votec VRC. Nie musisz się przejmować, jaki teren przed Tobą.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">17999zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wdwa">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>RONDO HVRT CF Zero, szary (2021)</h3>
                 <button class="close" onclick="kcztery_wdwa.style.display='none'"></button>
+                <img src="Rowery\rower2.png" alt="rower2" class="center">
+                <p>Rower RONDO HVRT został wybrany Rowerem Roku przez CyclingPlus i BikeRadar! Ponownie opracowany w 2019 roku, HVRT dostaje nowe górne koła aero kilka świeżych kolorów w 2021 roku i nadal będzie dostępny w trzech wariantach węgla z różnymi wykończeniami.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">30149zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wtrzy">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Lapierre Aircode DRS 5.0,<br> brązowy (2021)</h3>
                 <button class="close" onclick="kcztery_wtrzy.style.display='none'"></button>
+                <img src="Rowery\rower3.png" alt="rower3" class="center">
+                <p>Aircode DRS 5.0 to podstawowy model z serii Aircode - tutaj otrzymujesz najwyższą prędkość za rozsądną cenę. Aircode zawsze był rowerem wybieranym przez gwiazdę sprintu Arnau Démare z Team Groupama-FDJ: aerodynamiczny, sztywny i szybko reagujący.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">14399zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wcztery">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Vaast Bikes A/1 700C GRX,<br> czerwony (2021)</h3>
                 <button class="close" onclick="kcztery_wcztery.style.display='none'"></button>
+                <img src="Rowery\rower4.png" alt="rower4" class="center">
+                <p>VAAST A/1 Gravel z 28 kołami został stworzony z myślą o kierowcach, którzy oczekują doskonałej mieszanki odpowiedniości żwiru bez konieczności poświęcania niczego na grupowe przejażdżki po drogach utwardzonych lub codzienne dojazdy do pracy. Opona 28 dobrze nadaje się do jazdy z dużymi prędkościami toczenia nawet w terenie.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">12599zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wpiec">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>FIXIE Inc. Betty Leeds, czarny</h3>
                 <button class="close" onclick="kcztery_wpiec.style.display='none'"></button>
+                <img src="Rowery\rower5.png" alt="rower5" class="center">
+                <p>Niewiarygodnie atrakcyjnie cenowo prawdziwy FIXIE Inc. ze wszystkimi elementami, które potrzebujesz: stabilna i lekka stalowa rama, piasta Flip-Flop oraz wąska kierownica, aby pewnie manewrować w miejskiej dżungli. Niska waga w gratisie. Idealny wybór dla miejskich rowerzystów o sportowym zacięciu! </p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">1469zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wszesc">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>FIXIE Inc. Floater, czarny</h3>
                 <button class="close" onclick="kcztery_wszesc.style.display='none'"></button>
+                <img src="Rowery\rower6.png" alt="rower6" class="center">
+                <p>Rasowy model FIXIE Inc. w niesamowicie przystępnej cenie. Idealnie przystosowany do szybkiego poruszania się po miejskiej dżungli: stabilna i lekka aluminiowa rama, piasta flip-flop umożliwiająca łatwe przełączanie się pomiędzy mechanizmem ostrego i wolnego koła oraz gięta kierownica zapewniająca maksymalną kontrolę w gęstym ruchu miejskim.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">2099zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kcztery_wsiedem">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Ortler Detroit Wave, szary</h3>
+                <button class="close" onclick="kcztery_wszesc.style.display='none'"></button>
+                <img src="Rowery\rower7.png" alt="rower7" class="center">
+                <p>Detroit posiada kompletne wyposażenie miejskie, stabilne aluminiowe obręcze i bezobsługowy wkład suportu. Hamowanie odbywa się za pomocą mocnego hamulca typu V z przodu i klasycznego hamulca torpedo z tyłu.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">1469zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
                 <button class="close" onclick="kcztery_wsiedem.style.display='none'"></button>
             </div>
 
-
-
-
+            <!-- Ramy -->
             <div class="category">
                 <p><h3>Ramy</h3></p>
                 <div class="przewijak">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div></div>
+                    <div class="items" onclick="kpiec_wjeden.style.display='grid'"  ondblclick="kpiec_wjeden.style.display='none'"></div>
+                    <div class="items" onclick="kpiec_wdwa.style.display='grid'"  ondblclick="kpiec_wdwa.style.display='none'"></div>
+                    <div class="items" onclick="kpiec_wtrzy.style.display='grid'"  ondblclick="kpiec_wtrzy.style.display='none'"></div>
+                    <div class="items" onclick="kpiec_wcztery.style.display='grid'"  ondblclick="kpiec_wcztery.style.display='none'"></div>
+                    <div class="items" onclick="kpiec_wpiec.style.display='grid'"  ondblclick="kpiec_wpiec.style.display='none'"></div>
+                </div>
             </div>
+            <!-- Ramy informcja -->
+            <div class="visible" id="kpiec_wjeden">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kpiec_wjeden.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kpiec_wdwa">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kpiec_wdwa.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kpiec_wtrzy">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kpiec_wtrzy.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kpiec_wcztery">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kpiec_wcztery.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kpiec_wpiec">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kpiec_wpiec.style.display='none'"></button>
+            </div>
+
+            <!-- Kierownice -->
             <div class="category">
                 <p><h3>Kierownice</h3></p>
                 <div class="przewijak">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div></div>
+                    <div class="items" onclick="kszesc_wjeden.style.display='grid'"  ondblclick="kszesc_wjeden.style.display='none'"></div>
+                    <div class="items" onclick="kszesc_wdwa.style.display='grid'"  ondblclick="kszesc_wdwa.style.display='none'"></div>
+                    <div class="items" onclick="kszesc_wtrzy.style.display='grid'"  ondblclick="kszesc_wtrzy.style.display='none'"></div>
+                    <div class="items" onclick="kszesc_wcztery.style.display='grid'"  ondblclick="kszesc_wcztery.style.display='none'"></div>
+                </div>
             </div>
+            <!-- Kierownice info -->
+            <div class="visible" id="kszesc_wjeden">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kszesc_wjeden.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kszesc_wdwa">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kszesc_wdwa.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kszesc_wtrzy">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kszesc_wtrzy.style.display='none'"></button>
+            </div>
+            <div class="visible" id="kszesc_wcztery">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="kszesc_wcztery.style.display='none'"></button>
+            </div>
+            
+            <!-- Akcesoria -->
             <div class="category">
                 <p><h3>Akcesoria</h3></p>
                 <div class="przewijak">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div></div>
+                    <div class="items" onclick="ksiedem_wjeden.style.display='grid'"  ondblclick="ksiedem_wjeden.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wdwa.style.display='grid'"  ondblclick="ksiedem_wdwa.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wtrzy.style.display='grid'"  ondblclick="ksiedem_wtrzy.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wcztery.style.display='grid'"  ondblclick="ksiedem_wcztery.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wpiec.style.display='grid'"  ondblclick="ksiedem_wpiec.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wszesc.style.display='grid'"  ondblclick="ksiedem_wszesc.style.display='none'"></div>
+                </div>
             </div>
-            
+            <!-- Akcesoria info -->
+            <div class="visible" id="ksiedem_wjeden">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wjeden.style.display='none'"></button>
+            </div>
+            <div class="visible" id="ksiedem_wdwa">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wdwa.style.display='none'"></button>
+            </div>
+            <div class="visible" id="ksiedem_wtrzy">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wtrzy.style.display='none'"></button>
+            </div>
+            <div class="visible" id="ksiedem_wcztery">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wcztery.style.display='none'"></button>
+            </div>
+            <div class="visible" id="ksiedem_wpiec">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wpiec.style.display='none'"></button>
+            </div>
+            <div class="visible" id="ksiedem_wszesc">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
+                <button>Do koszyku</button>
+                <button>Kup odrazu</button>
+                <button class="close" onclick="ksiedem_wszesc.style.display='none'"></button>
+            </div>
+
+            <!-- Pusty -->
+            <div class="emptydiv">
+               
+            </div>
             <!-- ////////////////////////////////////////////////////////////////// -->
             
         </section>
@@ -473,6 +808,21 @@
             const kcztery_wpiec = document.getElementById('kcztery_wpiec');
             const kcztery_wszesc = document.getElementById('kcztery_wszesc');
             const kcztery_wsiedem = document.getElementById('kcztery_wsiedem');
+            const kpiec_wjeden= document.getElementById('kpiec_wjeden');
+            const kpiec_wdwa = document.getElementById('kpiec_wdwa');
+            const kpiec_wtrzy = document.getElementById('kpiec_wtrzy');
+            const kpiec_wcztery = document.getElementById('kpiec_wcztery');
+            const kpiec_wpiec = document.getElementById('kpiec_wpiec');
+            const kszesc_wjeden= document.getElementById('kszesc_wjeden');
+            const kszesc_wdwa = document.getElementById('kszesc_wdwa');
+            const kszesc_wtrzy = document.getElementById('kszesc_wtrzy');
+            const kszesc_wcztery = document.getElementById('kszesc_wcztery');
+            const ksiedem_wjeden= document.getElementById('ksiedem_wjeden');
+            const ksiedem_wdwa = document.getElementById('ksiedem_wdwa');
+            const ksiedem_wtrzy = document.getElementById('ksiedem_wtrzy');
+            const ksiedem_wcztery = document.getElementById('ksiedem_wcztery');
+            const ksiedem_wpiec = document.getElementById('ksiedem_wpiec');
+            const ksiedem_wszesc = document.getElementById('ksiedem_wszesc');
         </script>
     </main>
 </body>
