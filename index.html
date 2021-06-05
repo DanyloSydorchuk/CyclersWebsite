@@ -33,7 +33,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis ut impedit ea illo tempore expedita, minima corporis commodi, porro quae placeat saepe. Fugiat ducimus ut culpa quod, est eveniet.</p>
         </section>
         
-        
         <section id="serwis">
             <table>
                 <tr>
@@ -144,80 +143,82 @@
 
         <section id="serwis_reservation">
             <h1>Rezerwacja wizyty</h1>
-            <div>
-                <img src="serwisphotojeden.jpg" alt="">
-                <form action="" method="POST">
-                <table>
-                <tr>
-                    <td>
-                        <label for="form_name">Imię:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="form_name" class="style_input">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="form_surname">Nazwisko:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="form_surname" class="style_input">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="form_phone">Numer telefonu:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="form_phone" class="style_input">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="form_email">E-mail:</label>
-                    </td>
-                    <td>
-                        <input type="email" id="form_email" class="style_input">
-                    </td>
-                </tr>    
-                <tr>
-                    <td>
-                        <label for="form_date">Wybierz dzień:</label>
-                    </td>
-                    <td>
-                        <input type="date" id="form_date" class="style_input">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="form_hours">Wybierz godzinę:</label>
-                    </td>
-                    <td>
-                        <select name="" id="form_hours" class="style_input">
-                        <option value="god9">9:00</option>
-                        <option value="god10">10:00</option>
-                        <option value="god11">11:00</option>
-                        <option value="god12">12:00</option>
-                        <option value="god13">13:00</option>
-                        <option value="god14">14:00</option>
-                        <option value="god15">15:00</option>
-                        <option value="god16">16:00</option>
-                        <option value="god17">17:00</option>
-                        <option value="god18">18:00</option>
-                        <option value="god19">19:00</option>
-                        </select>
-                    </td> 
-                </tr>
-                <tr>
-                    <td colspan="2" class="center">
-                        <input type="reset" value="Usuń" class="style_input form_buttons">
-                        <input type="submit" value="Zarezerwuj" class="style_input form_buttons">
-                    </td>
-                </tr>
-                
-                </table>
-                </form>
-                <img src="serwisphotodwa.jpg" alt="">
+            <div id="contener">
+                <div id="obraz1" class="obraz"></div>
+                <div id="formularz_rezerwacji">
+                    <form action="" method="POST">
+                        <table>
+                        <tr>
+                            <td>
+                                <label for="form_name">Imię:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="form_name" class="style_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_surname">Nazwisko:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="form_surname" class="style_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_phone">Numer telefonu:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="form_phone" class="style_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_email">E-mail:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="form_email" class="style_input">
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>
+                                <label for="form_date">Wybierz dzień:</label>
+                            </td>
+                            <td>
+                                <input type="date" id="form_date" class="style_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_hours">Wybierz godzinę:</label>
+                            </td>
+                            <td>
+                                <select name="" id="form_hours" class="style_input">
+                                <option value="god9">9:00</option>
+                                <option value="god10">10:00</option>
+                                <option value="god11">11:00</option>
+                                <option value="god12">12:00</option>
+                                <option value="god13">13:00</option>
+                                <option value="god14">14:00</option>
+                                <option value="god15">15:00</option>
+                                <option value="god16">16:00</option>
+                                <option value="god17">17:00</option>
+                                <option value="god18">18:00</option>
+                                <option value="god19">19:00</option>
+                                </select>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <input type="reset" value="Usuń" class="style_input form_buttons">
+                                <input type="submit" value="Zarezerwuj" class="style_input form_buttons">
+                            </td>
+                        </tr>
+                        
+                        </table>
+                        </form>
+                </div>
+                <div id="obraz2" class="obraz"></div>
             </div>
         </section>
 
@@ -635,87 +636,178 @@
             <div class="category">
                 <p><h3>Ramy</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="kpiec_wjeden.style.display='grid'"  ondblclick="kpiec_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="kpiec_wdwa.style.display='grid'"  ondblclick="kpiec_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="kpiec_wtrzy.style.display='grid'"  ondblclick="kpiec_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="kpiec_wcztery.style.display='grid'"  ondblclick="kpiec_wcztery.style.display='none'"></div>
-                    <div class="items" onclick="kpiec_wpiec.style.display='grid'"  ondblclick="kpiec_wpiec.style.display='none'"></div>
+                    <div class="items" onclick="kpiec_wjeden.style.display='grid'"  ondblclick="kpiec_wjeden.style.display='none'">
+                        <img src="Ramy\Rama1.png" alt="Rama1">
+                    </div>
+                    <div class="items" onclick="kpiec_wdwa.style.display='grid'"  ondblclick="kpiec_wdwa.style.display='none'">
+                        <img src="Ramy\Rama2.png" alt="Rama2">
+                    </div>
+                    <div class="items" onclick="kpiec_wtrzy.style.display='grid'"  ondblclick="kpiec_wtrzy.style.display='none'">
+                        <img src="Ramy\Rama3.png" alt="Rama3">
+                    </div>
+                    <div class="items" onclick="kpiec_wcztery.style.display='grid'"  ondblclick="kpiec_wcztery.style.display='none'">
+                        <img src="Ramy\Rama4.png" alt="Rama4">
+                    </div>
+                    <div class="items" onclick="kpiec_wpiec.style.display='grid'"  ondblclick="kpiec_wpiec.style.display='none'">
+                        <img src="Ramy\Rama5.png" alt="Rama5">
+                    </div>
                 </div>
             </div>
             <!-- Ramy informcja -->
             <div class="visible" id="kpiec_wjeden">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Cervélo Áspero Frame Set,<br> szary (2021)</h3>
                 <button class="close" onclick="kpiec_wjeden.style.display='none'"></button>
+                <img src="Ramy\Rama1.png" alt="Rama1" class="center">
+                <p>Cervelo zaprojektowało model Áspero z myślą o czystej, niezmąconej prędkości, gotowej do podbijania linii mety, KOM, PR i FKT. Rower zaprojektowany bez ograniczeń, dla jeźdźców, którzy chcą je wypróbować. Jest sztywny - klasyczny i sportowy - i zachowuje się tak, jak można by oczekiwać od roweru szosowego w terenie.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">11249zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kpiec_wdwa">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Niner RLT 9 RDO Rama,<br> zielony/pomarańczowy (2021)</h3>
                 <button class="close" onclick="kpiec_wdwa.style.display='none'"></button>
+                <img src="Ramy\Rama2.png" alt="Rama2" class="center">
+                <p>Włókno węglowe RDO Niner jest wystarczająco lekkie i sztywne, aby zadowolić nawet najbardziej wybrednych żwirowców. To, co wymaga więcej refleksji i troski, to utrzymanie zdrowej dawki pochłaniającej wstrząsy. Jeźdźcy RLT 9 RDO toczą się wygodnie z kształtem rur i układem włókien węglowych, co zapewnia wyrozumiałość jazdy.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">11249zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kpiec_wtrzy">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Niner RLT 9 RDO Rama,<br> niebieski/beżowy (2021)</h3>
                 <button class="close" onclick="kpiec_wtrzy.style.display='none'"></button>
+                <img src="Ramy\Rama3.png" alt="Rama3" class="center">
+                <p>Włókno węglowe RDO Niner jest wystarczająco lekkie i sztywne, aby zadowolić nawet najbardziej wybrednych żwirowców. To, co wymaga więcej refleksji i troski, to utrzymanie zdrowej dawki pochłaniającej wstrząsy. Jeźdźcy RLT 9 RDO toczą się wygodnie z kształtem rur i układem włókien węglowych, co zapewnia wyrozumiałość jazdy.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">11249zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kpiec_wcztery">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>FOCUS Izalco Max Di2 Rama,<br> czarny</h3>
                 <button class="close" onclick="kpiec_wcztery.style.display='none'"></button>
+                <img src="Ramy\Rama4.png" alt="Rama4" class="center">
+                <p>Izalco MAX oferuje wysoką jakość w rozsądnej cenie. Wyposażony w karbonową ramę, karbonowy widelec i grupę Shimano Di2. Łatwiej i szybciej: Dzięki opatentowanej osi FOCUS RAT wymiana kół może nastąpić w mniej niż 10 sekund. Kiedy to się liczy, IZALCO MAX jest tam. Dzięki wysokiej sztywności nie traci się mocy, a moc łydek jest bezpośrednio przenoszona na napęd.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">12599zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kpiec_wpiec">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Niner RLT 9 Steel Rama, szary/niebieski (2021)</h3>
                 <button class="close" onclick="kpiec_wpiec.style.display='none'"></button>
+                <img src="Ramy\Rama5.png" alt="Rama5" class="center">
+                <p>W praktyce, Reynolds 853 jest prawie doskonałym materiałem do produkcji ram rowerowych. Zamiast ulegać osłabieniu pod wpływem ciepła, połączenia rur ramy wzmacniają się nawet po spawaniu TIG. Pozwala to na zastosowanie cieńszych, lżejszych rur ramy bez utraty trwałości lub wytrzymałości.</p>
+                <select name="size" class="size center">
+                    <option value="39">S | 48cm (28")</option>
+                    <option value="40">M | 51cm (28")</option>
+                    <option value="41">L | 54cm (28")</option>
+                    <option value="42">XL | 57cm (28")</option>
+                </select>
+                <h4 class="cena">7649zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
 
             <!-- Kierownice -->
             <div class="category">
                 <p><h3>Kierownice</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="kszesc_wjeden.style.display='grid'"  ondblclick="kszesc_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="kszesc_wdwa.style.display='grid'"  ondblclick="kszesc_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="kszesc_wtrzy.style.display='grid'"  ondblclick="kszesc_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="kszesc_wcztery.style.display='grid'"  ondblclick="kszesc_wcztery.style.display='none'"></div>
+                    <div class="items" onclick="kszesc_wjeden.style.display='grid'"  ondblclick="kszesc_wjeden.style.display='none'">
+                        <img src="Kierownice\Kierownica1.png" alt="Kierownica1">
+                    </div>
+                    <div class="items" onclick="kszesc_wdwa.style.display='grid'"  ondblclick="kszesc_wdwa.style.display='none'">
+                        <img src="Kierownice\Kierownica2.png" alt="Kierownica2">
+                    </div>
+                    <div class="items" onclick="kszesc_wtrzy.style.display='grid'"  ondblclick="kszesc_wtrzy.style.display='none'">
+                        <img src="Kierownice\Kierownica3.png" alt="Kierwonica3">
+                    </div>
+                    <div class="items" onclick="kszesc_wcztery.style.display='grid'"  ondblclick="kszesc_wcztery.style.display='none'">
+                        <img src="Kierownice\Kierownica4.png" alt="Kierownica4">
+                    </div>
                 </div>
             </div>
             <!-- Kierownice info -->
             <div class="visible" id="kszesc_wjeden">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>FSA Vision Metron 5D ACR <br> Integrated Handlebar Carbon <br> with 130mm Stem,<br> czarny (2021)</h3>
                 <button class="close" onclick="kszesc_wjeden.style.display='none'"></button>
+                <img src="Kierownice\Kierownica1.png" alt="Kierownica1" class="center">
+                <p>Metron 5D to najsztywniejszy i najbardziej aerodynamiczny zintegrowany system kierownicy i wspornika kierownicy firmy FSA. Unikalny kształt, łączący aerodynamikę i ergonomię, obejmuje również część środkową Aero Ergo.</p>
+                <select name="size" class="size center">
+                    <option value="39">420mm</option>
+                    <option value="40">440mm</option>
+                </select>
+                <h4 class="cena">3069zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kszesc_wdwa">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>PRO Stealth Evo LE Compact <br> Kierownica Drop Bar z mostkiem <br> 120mm UD Carbon (2021)</h3>
                 <button class="close" onclick="kszesc_wdwa.style.display='none'"></button>
+                <img src="Kierownice\Kierownica2.png" alt="Kierownica2" class="center">
+                <p>Całkowita integracja to koncepcja, której rezultatem jest PRO Stealth Evo. Nie tylko kierownica i wspornik są zaprojektowane jako kompletna całość, ale także mocowanie komputera i kierownicy są częścią ogólnego projektu.</p>
+                <select name="size" class="size center">
+                    <option value="39">420mm</option>
+                    <option value="40">440mm</option>
+                </select>
+                <h4 class="cena">2299zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kszesc_wtrzy">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>FSA Vision Metron 4D Flat M.A.S. <br> Handlebar Ø31,8mm Carbon Di2, <br> czarny (2021)</h3>
                 <button class="close" onclick="kszesc_wtrzy.style.display='none'"></button>
+                <img src="Kierownice\Kierownica3.png" alt="Kierownica3" class="center">
+                <p>Metron 4D Flat łączy w sobie super ergonomiczne i aerodynamiczne cechy Metrona 4D z bardziej płaską pozycją dłoni. Opcjonalny system Modular Aero System (MAS) do bezpośredniego montażu, umożliwiający uzyskanie dodatkowych pozycji uchwytu.</p>
+                <select name="size" class="size center">
+                    <option value="39">420mm</option>
+                    <option value="40">440mm</option>
+                </select>
+                <h4 class="cena">2029zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="kszesc_wcztery">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Ritchey Superlogic Evo Curve <br> Di2 Road Handlebar Ø31,8mm, <br> czarny (2021)</h3>
+                <button class="close" onclick="kszesc_wtrzy.style.display='none'"></button>
+                <img src="Kierownice\Kierownica4.png" alt="Kierownica4" class="center">
+                <p>Nowa, lekka kierownica Ritchey SuperLogic EvoCurve to najwyższej klasy kierownica karbonowa o krótkim zasięgu, płaskim kącie nachylenia i 4-stopniowym pochyleniu w ergonomicznej części górnej. Gładkie, dwupromieniowe krople pozwalają na doskonałe ułożenie dłoni.</p>
+                <select name="size" class="size center">
+                    <option value="39">420mm</option>
+                    <option value="40">440mm</option>
+                </select>
+                <h4 class="cena">1439zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
                 <button class="close" onclick="kszesc_wcztery.style.display='none'"></button>
             </div>
             
@@ -723,56 +815,86 @@
             <div class="category">
                 <p><h3>Akcesoria</h3></p>
                 <div class="przewijak">
-                    <div class="items" onclick="ksiedem_wjeden.style.display='grid'"  ondblclick="ksiedem_wjeden.style.display='none'"></div>
-                    <div class="items" onclick="ksiedem_wdwa.style.display='grid'"  ondblclick="ksiedem_wdwa.style.display='none'"></div>
-                    <div class="items" onclick="ksiedem_wtrzy.style.display='grid'"  ondblclick="ksiedem_wtrzy.style.display='none'"></div>
-                    <div class="items" onclick="ksiedem_wcztery.style.display='grid'"  ondblclick="ksiedem_wcztery.style.display='none'"></div>
-                    <div class="items" onclick="ksiedem_wpiec.style.display='grid'"  ondblclick="ksiedem_wpiec.style.display='none'"></div>
-                    <div class="items" onclick="ksiedem_wszesc.style.display='grid'"  ondblclick="ksiedem_wszesc.style.display='none'"></div>
+                    <div class="items" onclick="ksiedem_wjeden.style.display='grid'"  ondblclick="ksiedem_wjeden.style.display='none'">
+                        <img src="Akcesoria\Akces1.png" alt="Akces1">
+                    </div>
+                    <div class="items" onclick="ksiedem_wdwa.style.display='grid'"  ondblclick="ksiedem_wdwa.style.display='none'">
+                        <img src="Akcesoria\Akces2.png" alt="Akces2">
+                    </div>
+                    <div class="items" onclick="ksiedem_wtrzy.style.display='grid'"  ondblclick="ksiedem_wtrzy.style.display='none'">
+                        <img src="Akcesoria\Akces3.png" alt="Akces3">
+                    </div>
+                    <div class="items" onclick="ksiedem_wcztery.style.display='grid'"  ondblclick="ksiedem_wcztery.style.display='none'">
+                        <img src="Akcesoria\Akces4.png" alt="Akces4">
+                    </div>
+                    <div class="items" onclick="ksiedem_wpiec.style.display='grid'"  ondblclick="ksiedem_wpiec.style.display='none'">
+                        <img src="Akcesoria\Akces5.png" alt="Akces5">
+                    </div>
+                    <div class="items" onclick="ksiedem_wszesc.style.display='grid'"  ondblclick="ksiedem_wszesc.style.display='none'">
+                        <img src="Akcesoria\Akces6.png" alt="Akces6">
+                    </div>
                 </div>
             </div>
             <!-- Akcesoria info -->
             <div class="visible" id="ksiedem_wjeden">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Red Cycling Products PRO <br> Toolcase Master (2021)</h3>
                 <button class="close" onclick="ksiedem_wjeden.style.display='none'"></button>
+                <img src="Akcesoria\Akces1.png" alt="Akces1" class="center">
+                <p>Walizka z narzędziami RCP dla profesjonalistów. Wysokiej jakości narzędzia do profesjonalnego warsztatu schowane w poręcznej walizce. JEsteś przygotowany na każda ewentualność.</p>
+                <h4 class="cena">1349zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ksiedem_wdwa">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Feedback Sports Velo Cache <br> Stojak serwisowy na 2 rowery, <br> czarny (2021)</h3>
                 <button class="close" onclick="ksiedem_wdwa.style.display='none'"></button>
+                <img src="Akcesoria\Akces2.png" alt="Akces2" class="center">
+                <p>Velo Cache 2-Bike łączy w sobie elegancki design i wysoką stabilność. Do przechowywania i/lub prezentacji 2 rowerów. Dostępny w kolorze czarnym i srebrnym.</p>
+                <h4 class="cena">999zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ksiedem_wtrzy">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Lupine Betty RX 14 <br> Latarka czołowa (2021)</h3>
                 <button class="close" onclick="ksiedem_wtrzy.style.display='none'"></button>
+                <img src="Akcesoria\Akces3.png" alt="Akces3" class="center">
+                <p>Najjaśniejsza czołówka świata jest teraz jeszcze jaśniejsza. Gigantyczne 5000 lumenów promieniuje z topowego modelu Lupine i czyni go niekwestionowanie najjaśniejszą lampą w swoim rodzaju.</p>
+                <h4 class="cena">4049zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ksiedem_wcztery">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Croozer BOB Ibex Travel Pendant for 26",<br> złoty (2021)</h3>
                 <button class="close" onclick="ksiedem_wcztery.style.display='none'"></button>
+                <img src="Akcesoria\Akces4.png" alt="Akces4" class="center">
+                <p>Jednotorowa, amortyzowana przyczepa rowerowa cargo. Dla 26 rowerów kategorii City, Touring, Mountainbike, Sport i Tandem.</p>
+                <h4 class="cena">3015zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ksiedem_wpiec">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>SILCA Viaggio Travel Pompka podłogowa (2021)</h3>
                 <button class="close" onclick="ksiedem_wpiec.style.display='none'"></button>
+                <img src="Akcesoria\Akces5.png" alt="Akces5" class="center">
+                <p>Pompa podróżna VIAGGIO jest kompaktową, składaną pompą podłogową, zaprojektowaną specjalnie dla rowerzystów w podróży. Pompa podróżna VIAGGIO posiada składane nóżki, zdejmowany uchwyt i zwijaną pokrywę wykonaną z woskowanego płótna z przegródkami na narzędzia. To i wbudowany manometr Bluetooth sprawiają, że jest to najbardziej mobilna pompa podłogowa Silca na świecie.</p>
+                <h4 class="cena">1629zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
             <div class="visible" id="ksiedem_wszesc">
-                <h3>Lorem</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos, ducimus inventore et nemo, eum, magni officiis quisquam quibusdam libero eveniet fugit saepe. Illum, consequatur impedit voluptate distinctio eaque aliquam.</p>
-                <button>Do koszyku</button>
-                <button>Kup odrazu</button>
+                <h3>Thule Chariot Sport 2 Bike Trailer,<br> czarny (2021)</h3>
                 <button class="close" onclick="ksiedem_wszesc.style.display='none'"></button>
+                <img src="Akcesoria\Akces6.png" alt="Akces6" class="center">
+                <p>Doskonała przyczepa, transporter do biegania i wózek o wspaniałym designie, z dużym komfortem i stylem dla osób uprawiających sport i ich dzieci.</p>
+                <h4 class="cena">6299zł</h4>
+                <button class="dokoszyku center">Do koszyku</button>
+                <button class="kupodrazu center">Kup odrazu</button>
+                
             </div>
 
             <!-- Pusty -->
