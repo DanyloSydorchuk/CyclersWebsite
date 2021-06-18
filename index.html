@@ -4,33 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyclers</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
 </head>
 <body>
     <main>
-        <navigation>
+        <header>
             <img src="logo.jpg" alt="logo" id="logo">
-                <div id="navigation_buttons">
-                    <a href="#about_us_photo"><button>About us</button></a>
+                <navigation>
+                    <a href="#about_us_info"><button>About us</button></a>
                     <a href="#serwis"><button>Cennik</button></a>
                     <a href="#serwis_reservation"><button>Serwis</button></a>
                     <a href="#shop"><button>Sklep</button></a>
-                    <a href="#about_us_photo"><button>Kontakt</button></a>
-                </div>
-        </navigation>
+                    <a href="#about_us_info"><button>Kontakt</button></a>
+                </navigation>
+        </header>
         
         <section id="photoslider">
-            <!-- photoslide with text -->
+            <p id="hello">Welcome</p>
         </section>
         
         <section id="about_us_photo">
-                <img src="pexels-tima-miroshnichenko-5061064.jpg" alt="about us">
+                <img src="pexels-tima-miroshnichenko-5061064.jpg" alt="Our photo">
         </section>
 
         <section id="about_us_info">
+            <div>
                 <h1>About us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus quia odio totam dicta quibusdam enim inventore eaque, repudiandae id libero porro ipsa sed odit aliquam, harum deleniti excepturi veniam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis ut impedit ea illo tempore expedita, minima corporis commodi, porro quae placeat saepe. Fugiat ducimus ut culpa quod, est eveniet.</p>
+                <p class="datastyle">Kościelna 3, 30-034 Kraków</p>
+                <p class="datastyle">+4834212312</p>
+                <p class="datastyle">cyclers_contact@gmail.com</p>
+                <nav>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="blanc"></a>
+                    <a href="https://twitter.com/twitter" class="fa fa-twitter" target="blanc"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="blanc"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="blanc"></a>
+                </nav>
+            </div>
+        </section>
+
+        <section id="animation">
+            <img src="rower2.png" alt="rower">
         </section>
         
         <section id="serwis">
@@ -144,16 +163,16 @@
         <section id="serwis_reservation">
             <h1>Rezerwacja wizyty</h1>
             <div id="contener">
-                <div id="obraz1" class="obraz"></div>
-                <div id="formularz_rezerwacji">
-                    <form action="" method="POST">
+                <div id="image1"></div>
+                <div id="reservation_form">
+                    <form action="index.html" method="GET">
                         <table>
                         <tr>
                             <td>
                                 <label for="form_name">Imię:</label>
                             </td>
                             <td>
-                                <input type="text" id="form_name" class="style_input">
+                                <input name="first_name" type="text" id="form_name" class="style_input">
                             </td>
                         </tr>
                         <tr>
@@ -161,7 +180,7 @@
                                 <label for="form_surname">Nazwisko:</label>
                             </td>
                             <td>
-                                <input type="text" id="form_surname" class="style_input">
+                                <input name="last_name" type="text" id="form_surname" class="style_input">
                             </td>
                         </tr>
                         <tr>
@@ -169,7 +188,7 @@
                                 <label for="form_phone">Numer telefonu:</label>
                             </td>
                             <td>
-                                <input type="text" id="form_phone" class="style_input">
+                                <input name="phone_number" type="text" id="form_phone" class="style_input">
                             </td>
                         </tr>
                         <tr>
@@ -177,7 +196,7 @@
                                 <label for="form_email">E-mail:</label>
                             </td>
                             <td>
-                                <input type="email" id="form_email" class="style_input">
+                                <input name="email" type="email" id="form_email" class="style_input">
                             </td>
                         </tr>    
                         <tr>
@@ -185,7 +204,7 @@
                                 <label for="form_date">Wybierz dzień:</label>
                             </td>
                             <td>
-                                <input type="date" id="form_date" class="style_input">
+                                <input name="reservation_date" type="date" id="form_date" class="style_input">
                             </td>
                         </tr>
                         <tr>
@@ -193,32 +212,32 @@
                                 <label for="form_hours">Wybierz godzinę:</label>
                             </td>
                             <td>
-                                <select name="" id="form_hours" class="style_input">
-                                <option value="god9">9:00</option>
-                                <option value="god10">10:00</option>
-                                <option value="god11">11:00</option>
-                                <option value="god12">12:00</option>
-                                <option value="god13">13:00</option>
-                                <option value="god14">14:00</option>
-                                <option value="god15">15:00</option>
-                                <option value="god16">16:00</option>
-                                <option value="god17">17:00</option>
-                                <option value="god18">18:00</option>
-                                <option value="god19">19:00</option>
+                                <select name="reservationhour" id="form_hours" class="style_input">
+                                    <option value="god9">9:00</option>
+                                    <option value="god10">10:00</option>
+                                    <option value="god11">11:00</option>
+                                    <option value="god12">12:00</option>
+                                    <option value="god13">13:00</option>
+                                    <option value="god14">14:00</option>
+                                    <option value="god15">15:00</option>
+                                    <option value="god16">16:00</option>
+                                    <option value="god17">17:00</option>
+                                    <option value="god18">18:00</option>
+                                    <option value="god19">19:00</option>
                                 </select>
                             </td> 
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <input type="reset" value="Usuń" class="style_input form_buttons">
-                                <input type="submit" value="Zarezerwuj" class="style_input form_buttons">
+                                <input type="reset" value="Usuń" class="form_buttons style_input">
+                                <input type="submit" value="Zarezerwuj" class="form_buttons style_input" onclick="reservation_info">
                             </td>
                         </tr>
                         
                         </table>
                         </form>
                 </div>
-                <div id="obraz2" class="obraz"></div>
+                <div id="image2"></div>
             </div>
         </section>
 
@@ -226,7 +245,7 @@
             <!-- Kaski -->
             <div class="category">
                 <p><h3>Kaski</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="kjeden_wjeden.style.display='grid'" ondblclick="kjeden_wjeden.style.display='none'">
                         <img src="Kaski\kask1.png" alt="Kask1">
                     </div>
@@ -304,7 +323,7 @@
             <!-- Obuwie  -->
             <div class="category">
                     <p><h3>Obuwie</h3></p>
-                    <div class="przewijak">
+                    <div class="scroll_column">
                         <div class="items" onclick="kdwa_wjeden.style.display='grid'"  ondblclick="kdwa_wjeden.style.display='none'">
                             <img src="Obuwie\Obuwie1.png" alt="Obuwie1">
                         </div>
@@ -391,7 +410,7 @@
             <!-- Ubrania  -->
             <div class="category">
                 <p><h3>Odzież</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="ktrzy_wjeden.style.display='grid'"  ondblclick="ktrzy_wjeden.style.display='none'">
                         <img src="Ubrania\Ubranie1.png" alt="Koszula1">
                     </div>
@@ -494,7 +513,7 @@
             <!-- Rowery -->
             <div class="category">
                 <p><h3>Rowery</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="kcztery_wjeden.style.display='grid'"  ondblclick="kcztery_wjeden.style.display='none'">
                         <img src="Rowery\rower1.png" alt="rower1">
                     </div>
@@ -635,7 +654,7 @@
             <!-- Ramy -->
             <div class="category">
                 <p><h3>Ramy</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="kpiec_wjeden.style.display='grid'"  ondblclick="kpiec_wjeden.style.display='none'">
                         <img src="Ramy\Rama1.png" alt="Rama1">
                     </div>
@@ -738,7 +757,7 @@
             <!-- Kierownice -->
             <div class="category">
                 <p><h3>Kierownice</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="kszesc_wjeden.style.display='grid'"  ondblclick="kszesc_wjeden.style.display='none'">
                         <img src="Kierownice\Kierownica1.png" alt="Kierownica1">
                     </div>
@@ -814,7 +833,7 @@
             <!-- Akcesoria -->
             <div class="category">
                 <p><h3>Akcesoria</h3></p>
-                <div class="przewijak">
+                <div class="scroll_column">
                     <div class="items" onclick="ksiedem_wjeden.style.display='grid'"  ondblclick="ksiedem_wjeden.style.display='none'">
                         <img src="Akcesoria\Akces1.png" alt="Akces1">
                     </div>
@@ -897,6 +916,11 @@
                 
             </div>
 
+            <div id="reservation_info">
+                <h1>Zarezerwowana wizyta</h1>
+                <p id="area_for_info_reservation"></p>
+            </div>
+
             <!-- Pusty -->
             <div class="emptydiv">
                
@@ -905,9 +929,13 @@
             
         </section>
 
-        <section id="stopka">
+        <div id="button_goup">
+            <a href="#"><button>Go up</button></a>
+        </div>
+
+        <footer>
             © 2019-2021 cyclers.pl. Wszelkie prawa zastrzeżone.
-        </section>
+        </footer>
 
         <script>
             const kjeden_wjeden = document.getElementById('kjeden_wjeden');
